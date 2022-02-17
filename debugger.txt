@@ -1,0 +1,11 @@
+Jonan Doan
+	There was multiple account where I used gdb and valgrind to resolve my problem with the constructor and destructor of my program because of how I
+could back trace where my error was.  For example, with gdb, I ran my program through gcc  and gdb because I thought I implemented my constructor
+and destructor for my derived class correctly but I found out later that my error occurred because I forgot to invoked my based constructor in my
+derived class constructor which I then corrected afterward. For this example, I resolved it by using g++ -Wall -g in order catch all of my error
+including warning errors to and then run it through gdb to be prompted with what type of error it might be.
+
+	I had a problem with deallocating my memory when implementing my destructor for my circular linked list so I used valgrind to check if there is any
+memory leakage that might occur. It helps me check if every node has been deallocated properly and check if all dynamic allocated memory has been
+properly deleted. It helps inform the user how much memory has been lost which would be helpful for the user to know that there might be something
+wrong with their approach with the destructor implementation.

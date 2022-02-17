@@ -1,0 +1,32 @@
+Jonan Doan
+10/12/2020
+Prog1
+Cs202
+	For my program design, it main function is to allow the user client to make any type of donation based on whatever the user wants. It will
+first prompt the user for his or her name to be tag along with the donation. The program will then prompt the user if they want to go into the food
+donation, the supply donation, or the clothing donation. The program will direct the user to the option of displaying the donation they had made, add
+another donation, or remove the past donation that they have made. The only difference with the class food, the user will be prompted for an expiration
+date when it is added as a donation. The program will be redirected to the start and the whole process will start again from the beginning with allowing
+the user to type in another name to be added to the donation list.
+	
+	For my program, I will be using 8 classes (The name class, donation class, food class, supplies class, clothing class and 3 node classes.) The name
+class and the donation class will have a “has a “relationship therefore the donation will be an object composition of class name. Donation have a “has a”
+relationship between food, supplies, and clothing so therefore those three classes will be an object composition of class donation. The three relief efforts
+will each have a node class, which replaces the use of struct, with the relationship of the object composition that will allow the three relief efforts to
+implement a circular linked list.
+
+	To prevent using getters, my program will protect all the data member in the protected section of each class. I will then use my objective composition
+relationship of each class to be able to access each data member and let the class be able to use each other’s data member however it is necessary based on its
+function. How the object orientation solves the problem of using getters is because the field class will hold a reference to another object which will create a
+relationship between the classes and allow a sharing relationship between the classes. Also, by adding the data member into the protected instead of the private
+will allow the relationship between class to happen while also protecting it from being used by the client program from ever being touch. By using these two
+methods there are really no point of using a getter because these two implementations are doing the job of a getter plus more.
+
+	For my name class, it will have a default constructor, a constructor with the argument char * initial_name), a copy constructor, a default constructor.
+For the function it will have void function called register name which will register the name of the user and a bool function called find name which
+will prompt the user if the name that they search for is in the search list. If the user wanted to register the name then it will go into the
+donation class and be prompted to either make a specific donation which is implemented in the  void make_donation function. If the user wanted to find a
+name it will then go to the donation class and access the bool function named find_type which will ask the user what type of donation they want to display
+or remove based on the name they had searched. The three relief efforts all have add function, remove function, and display function. If the user wants to make
+a donation it will go into one of the add function of the relief effort or if the user wants to find a donation the user will have the option to remove the
+particular type or display the particular type of relief effort.

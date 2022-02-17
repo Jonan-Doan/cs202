@@ -1,0 +1,11 @@
+Jonan Doan
+11/6/2020
+I’m not sure where my error might occur but because of gdb I’m aware there was a double free error that occurred in my removal function. 
+I used b to make a breakpoint on line 76 and use layout .src to see my code layout. I use bt to see where my double free might have occurred
+but I still couldn’t see where I’m having my double free error. So, I used next and print to see where my error might occur and found that some
+data is being passed in main that gives the list some random data.
+
+I’m sure there are many errors that I am still not acquainted of but the command that I have learn in gdb would help me out with figuring out
+segmentation fault and double free errors. I wish I had more time with this assignment so that I could properly understand dynamic binding and figure out
+why my code is not working. Although I have additional compiling error, the reason why I believe specifically the removal may not have worked is because
+I wasn’t using a look ahead approach which is needed if I don’t have a reference pointer. 
